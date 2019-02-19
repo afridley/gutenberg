@@ -749,31 +749,6 @@ Returns the editor settings.
 
 The editor settings object.
 
-### hasEditorUndo
-
-Returns true if any past editor history snapshots exist, or false otherwise.
-
-*Parameters*
-
- * state: Global application state.
-
-*Returns*
-
-Whether undo history exists.
-
-### hasEditorRedo
-
-Returns true if any future editor history snapshots exist, or false
-otherwise.
-
-*Parameters*
-
- * state: Global application state.
-
-*Returns*
-
-Whether redo history exists.
-
 ## Actions
 
 ### resetBlocks
