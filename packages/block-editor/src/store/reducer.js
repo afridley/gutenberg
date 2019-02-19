@@ -652,6 +652,10 @@ export function blockSelection( state = {
 			const lastBlock = last( action.blocks );
 			const nextSelectedBlockClientId = lastBlock ? lastBlock.clientId : null;
 
+			if ( nextSelectedBlockClientId === state.start && nextSelectedBlockClientId === state.end ) {
+				return state;
+			}
+
 			return {
 				...state,
 				start: nextSelectedBlockClientId,
