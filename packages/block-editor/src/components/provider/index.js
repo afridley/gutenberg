@@ -39,7 +39,7 @@ const withRegistry = createHigherOrderComponent(
  * @return {boolean} Whether the two objects have the same keys.
  */
 export function hasSameKeys( a, b ) {
-	return isShallowEqual( Object.keys( a ), Object.keys( b ) );
+	return !! a && !! b && isShallowEqual( Object.keys( a ), Object.keys( b ) );
 }
 
 /**
